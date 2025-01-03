@@ -1,0 +1,28 @@
+*
+!.gitignore
+
+# setup script
+!setup.sh
+
+# starship config
+!starship.toml
+
+# ghostty config
+!ghostty/
+!ghostty/**
+
+# i3 config
+!i3/
+!i3/**
+
+# picom config
+!picom/
+!picom/**
+
+# polybar config
+!polybar/
+!polybar/**
+
+# rofi config
+!rofi/
+!rofi/**
