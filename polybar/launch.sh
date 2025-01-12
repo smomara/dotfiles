@@ -8,3 +8,8 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch the bar
 polybar -r bar &
+
+# Launch the secondary bar on HDMI-1 (if connected)
+if xrandr --query | grep -q "HDMI-1 connected"; then
+    polybar bar-hdmi &
+fi
